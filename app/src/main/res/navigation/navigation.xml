@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment"
+    xmlns:tools ="http://schemas.android.com/tools">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.piexxi.clickme.TitleFragment"
+        android:label="TitleFragment"
+        tools:layout="@layout/fragment_titlee">
+        <action
+            android:id="@+id/action_titleFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.piexxi.clickme.GameFragment"
+        android:label="GameFragment"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_gameFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.piexxi.clickme.ScoreFragment"
+        android:label="ScoreFragment"
+        tools:layout="@layout/fragment_score">
+        <action
+            android:id="@+id/action_scoreFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_scoreFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+        <argument
+            android:name="score"
+            app:argType="integer" />
+    </fragment>
+</navigation>

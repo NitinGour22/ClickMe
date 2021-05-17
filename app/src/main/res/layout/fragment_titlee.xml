@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/click"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="72sp" />
+
+        <ImageView
+            android:id="@+id/iv_touch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/iv_desription"
+            android:src="@drawable/ic_touch"
+            android:layout_marginBottom="50dp" />
+
+        <TextView
+            android:id="@+id/tv_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/bt_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_700"
+            android:fontFamily="monospace"
+            android:text="@string/play"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+</layout>
